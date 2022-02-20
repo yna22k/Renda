@@ -13,6 +13,8 @@
 		C901A69627AF68E0007D914B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C901A69427AF68E0007D914B /* Main.storyboard */; };
 		C901A69827AF68E3007D914B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C901A69727AF68E3007D914B /* Assets.xcassets */; };
 		C901A69B27AF68E3007D914B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C901A69927AF68E3007D914B /* LaunchScreen.storyboard */; };
+		C969393C27C29CC10014C926 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C969393B27C29CC10014C926 /* FirebaseFirestore */; };
+		C969393E27C2A0D90014C926 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C969393D27C2A0D90014C926 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		C901A69727AF68E3007D914B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C901A69A27AF68E3007D914B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C901A69C27AF68E3007D914B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C969393D27C2A0D90014C926 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C969393C27C29CC10014C926 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 				C901A69727AF68E3007D914B /* Assets.xcassets */,
 				C901A69927AF68E3007D914B /* LaunchScreen.storyboard */,
 				C901A69C27AF68E3007D914B /* Info.plist */,
+				C969393D27C2A0D90014C926 /* GoogleService-Info.plist */,
 			);
 			path = Renda;
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = Renda;
+			packageProductDependencies = (
+				C969393B27C29CC10014C926 /* FirebaseFirestore */,
+			);
 			productName = Renda;
 			productReference = C901A68B27AF68E0007D914B /* Renda.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = C901A68227AF68E0007D914B;
+			packageReferences = (
+				C969393A27C29CC10014C926 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = C901A68C27AF68E0007D914B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C901A69B27AF68E3007D914B /* LaunchScreen.storyboard in Resources */,
+				C969393E27C2A0D90014C926 /* GoogleService-Info.plist in Resources */,
 				C901A69827AF68E3007D914B /* Assets.xcassets in Resources */,
 				C901A69627AF68E0007D914B /* Main.storyboard in Resources */,
 			);
@@ -358,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C969393A27C29CC10014C926 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C969393B27C29CC10014C926 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C969393A27C29CC10014C926 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C901A68327AF68E0007D914B /* Project object */;
 }
